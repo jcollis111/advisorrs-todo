@@ -1,0 +1,87 @@
+.ToDos {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: column;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+.ToDo {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: stretch;
+  font: inherit;
+  font-size: 24px;
+  height: auto;
+  justify-content: space-between;
+  margin: 3px;
+  min-height: 50px;
+  padding: 0px 0px 0px 0px;
+  vertical-align: middle;
+  width: 480px;
+}
+
+.ToDo .Active {
+  background-color: white;
+  color: black;
+}
+
+.ToDo .ActiveCompleted {
+  background-color: #6790c4;
+  border: 2px;
+  border-color: #226dcf;
+  border-style: solid;
+  color: #226dcf;
+  text-decoration: line-through;
+}
+
+.ToDo .Archived {
+  background-color: #6790c4;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+}
+
+.ToDo .ArchivedCompleted {
+  background-color: #6790c4;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ToDoIcon {
+  flex-basis: 10px;
+}
+
+.ToDoText {
+  text-align: left;
+  flex-basis: 380px;
+}
+
+.hr {
+  border-top: 2px dashed #226dcf;
+  border-bottom: 2px dashed #226dcf;
+}
+
+@media (min-width: 500px) and(min-height: 400px) {
+  .ToDo {
+    font-size: 12px;
+    height: 380px;
+    width: 480px;
+  }
+}
+
+@media (min-width: 1000px) and(min-height: 700px) {
+  .ToDo {
+    font-size: 24px;
+    height: 680px;
+    width: 900px;
+  }
+}
